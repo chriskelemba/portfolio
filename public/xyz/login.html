@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styling.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+        <style>
+            .container {
+                background-color: white;
+                padding: 40px;
+                padding-left: 100px;
+                padding-right: 100px;
+                border-radius: 20px;
+                width: 30%;
+                margin: auto;
+            }
+            form a {
+                text-decoration: none;
+                color: rgb(167, 22, 167);
+            }
+            form legend {
+                text-align: center;
+                font-size: 25px;
+            }
+            form .para1 {
+                text-align: center;
+            }
+            form input[type=email] {
+                width: 100%;
+                padding: 7px;
+                border: 1px black solid;
+                border-radius: 7px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            form input[type=password] {
+                width: 100%;
+                padding: 7px;
+                border: 1px black solid;
+                border-radius: 7px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            form input[type=submit] {
+                background-color: black;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+                width: 103%;
+                border: none;
+                margin-top: 20px;
+            }
+            form input[type=submit]:hover {
+                background-color: rgb(172, 172, 172);
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            form input[type=checkbox] {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="get">
+                <b>
+                    <legend>Log into XYZ Plumbing Ltd.</legend>
+                    <p class="para1">Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" name="email"/>
+                    <br>
+                    <label>Password</label>
+                    <br>
+                    <input type="password" name="password"/>
+                    <br>
+                </b>
+                    <input type="checkbox" name="agree"/><label>Remember Me</label>
+                    <br>
+                    <input type="submit" name="Submit" value="Log in"/>
+            </form>
+        </div>
+    </body>
+</html>

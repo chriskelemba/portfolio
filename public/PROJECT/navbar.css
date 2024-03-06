@@ -1,0 +1,97 @@
+body {
+    background-color: #363f49;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+header {
+    padding: 5px;
+    background-color: black;
+}
+header .login {
+    float: right;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+header .login input[type=submit] {
+    background-color: black;
+    border: solid 5px #0e2858;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin-right: 40px;
+    font-weight: bold;
+}
+header .login input[type=submit]:hover {
+    background-color: #0e2858;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar {
+    background-color: #0e2858;
+    padding: 5px;
+    margin: 0%;
+    position: relative;
+    z-index: 1;
+}
+.navbar nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.navbar nav ul li {
+    float: left;
+    width: 17.8%;
+    padding: 20px;
+}
+.navbar nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+}
+.navbar nav ul li a:hover {
+    background-color: #8c848c;
+    cursor: pointer;
+    transition: 1s;
+}
+.navbar nav .material-symbols-outlined {
+    position: absolute;
+    top: 25px;
+}
+.navbar nav .home {
+    position: relative;
+    left: -45px;
+    top: -30px;
+}
+.navbar nav .news {
+    position: relative;
+    left: -45px;
+    top: -30px;
+}
+.navbar nav .partner {
+    position: relative;
+    left: -58px;
+    top: -30px;
+}
+.navbar nav .contact {
+    position: relative;
+    left: -55px;
+    top: -30px;
+}
+.navbar nav .about_us {
+    position: relative;
+    left: -58px;
+    top: -30px;
+}
+footer .footerline {
+    width: 50%;
+}

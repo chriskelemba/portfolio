@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator App</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+    <div class="grid grid-cols-4 gap-4 bg-black text-white text-center text-3xl mt-4 mx-auto px-36 w-1/2">
+        <input type="text" id="display" class="bg-black focus:outline-none py-10 text-right text-8xl col-span-4" readonly>
+
+        <!-- Row 1 -->
+        <button onclick="clearDisplay()" class="bg-gray-300 hover:bg-gray-100 text-black rounded-full font-bold py-10">AC</button>
+        <button onclick="deleteDisplay()" class="bg-gray-300 hover:bg-gray-100 text-black rounded-full font-bold py-10">DEL</button>
+        <button onclick="percentageDisplay()" class="bg-gray-300 hover:bg-gray-100 text-black rounded-full font-bold py-10">%</button>
+        <button onclick="appendToDisplay('/')" class="bg-orange-400 hover:bg-orange-300 rounded-full font-bold py-10">÷</button>
+
+        <!-- Row 2 -->
+        <button onclick="appendToDisplay('7')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">7</button>
+        <button onclick="appendToDisplay('8')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">8</button>
+        <button onclick="appendToDisplay('9')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">9</button>
+        <button onclick="appendToDisplay('*')" class="bg-orange-400 hover:bg-orange-300 rounded-full font-bold py-10">x</button>
+
+        <!-- Row 3 -->
+        <button onclick="appendToDisplay('4')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">4</button>
+        <button onclick="appendToDisplay('5')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">5</button>
+        <button onclick="appendToDisplay('6')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">6</button>
+        <button onclick="appendToDisplay('-')" class="bg-orange-400 hover:bg-orange-300 rounded-full font-bold py-10">-</button>
+
+        <!-- Row 4 -->
+        <button onclick="appendToDisplay('1')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">1</button>
+        <button onclick="appendToDisplay('2')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">2</button>
+        <button onclick="appendToDisplay('3')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">3</button>
+        <button onclick="appendToDisplay('+')" class="bg-orange-400 hover:bg-orange-300 rounded-full font-bold py-10">+</button>
+
+        <!-- Row 5 -->
+        <button onclick="appendToDisplay('0')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10 col-span-2">0</button>
+        <button onclick="appendToDisplay('.')" class="bg-gray-700 hover:bg-gray-500 rounded-full font-bold py-10">.</button>
+        <button onclick="calculatorResult()" class="bg-orange-400 hover:bg-orange-300 rounded-full font-bold py-10">=</button>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        function appendToDisplay(value) {
+            document.querySelector("#display").value += value;
+        }
+
+        function clearDisplay() {
+            document.querySelector("#display").value = "";
+        }
+
+        function deleteDisplay() {
+            var dlt = document.querySelector("#display").value;
+            document.querySelector("#display").value = dlt.substring(0,dlt.length -1);
+        }
+
+        // Doesn't Work
+        function percentageDisplay() {
+            var percent = document.querySelector("#display").value;
+            eval(percent / 100);
+        }
+
+        function calculatorResult() {
+            try {
+                document.querySelector("#display").value = eval(document.querySelector("#display").value);
+            } catch (error) {
+                document.querySelector("#display").value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>

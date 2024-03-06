@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styling.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+        <style>
+            .top {
+                margin-top: 2%;
+                border-radius: 20px;
+                padding: 100px;
+                color: white;
+                background-color: black;
+                height: 200px;
+            }
+            .top p {
+                width: 40%;
+                font-size: small;
+            }
+            .top a {
+                background-color: white;
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                border-radius: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                position: relative;
+                top: 20px;
+            }
+            .top a:hover {
+                background-color: rgb(172, 172, 172);
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            .mainprovide {
+                margin-top: 2%;
+                background-color: white;
+                color: black;
+                border-radius: 20px;
+            }
+            .provide1 {
+                margin-left: 13%;
+                padding-top: 3%;
+                display: flex;
+            }
+            .provide1 h3 {
+                text-align: center;
+                position: relative;
+                bottom: 70px;
+            }
+            .provide1 .two {
+                margin-right: 1%;
+                margin-left: 1%;
+                color: white;
+            }
+            .provide1 .three {
+                color: white;
+            }
+            .provide2 {
+                margin-left: 13%;
+                display: flex;
+            }
+            .provide2 h3 {
+                text-align: center;
+                position: relative;
+                bottom: 70px;
+            }
+            .provide2 .two {
+                margin-right: 1%;
+                margin-left: 1%;
+            }
+            .provide2 .three {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="login">
+                <form action="login.html" method="get" id="form">
+                    <input type="submit" name="Submit" value="Login"/>
+                </form>
+            </div>
+            <div class="signup">
+                <form action="signup.html" method="get" id="form">
+                    <input type="submit" name="Submit" value="Signup"/>
+                </form>
+            </div>
+            <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 14%; color: white;">XYZ PLUMBING SERVICES Ltd.</h1>
+        </header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                    <li><a href="services.html"><b>Services</b></a></li>
+                    <li><a href="contact.html"><b>Contact Us</b></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="top">
+                <h1>WE'RE YOUR PLUMBER</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus nihil nesciunt suscipit. Explicabo, eius tempore cumque eligendi fuga dolor hic, suscipit, alias totam voluptatem magni aliquam odit nihil dignissimos?</p>
+                <b><a href="signup.html">SIGN UP NOW</a></b>
+            </div>
+            <div class="mainprovide">
+                <div class="provide1">
+                    <div class="one">
+                        <img src="electricity.png" height="300" width="450"/>
+                        <h3>Electricity</h3>
+                    </div>
+                    <div class="two">
+                        <img src="heating.jpg" height="300" width="450"/>
+                        <h3>Heating</h3>
+                    </div>
+                    <div class="three">
+                        <img src="plumbing.jpg" height="300" width="450"/>
+                        <h3>Plumbing</h3>
+                    </div>
+                </div>
+                <div class="provide2">
+                    <div class="one">
+                        <img src="renovation.jpeg" height="300" width="450"/>
+                        <h3>Renovation</h3>
+                    </div>
+                    <div class="two">
+                        <img src="roofing.jpg" height="300" width="450"/>
+                        <h3>Roofing</h3>
+                    </div>
+                    <div class="three">
+                        <img src="sewerage.jpg" height="300" width="450"/>
+                        <h3>Sewerage</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; padding: 25px; background-color: #000000;">
+            <a href="https://www.youtube.com/account"><img src="youtube.png"/></a><a href="https://www.facebook.com/login.php/"><img src="facebook.png"/></a><a href="https://www.instagram.com/accounts/login/"><img src="instagram.png"/></a><a href="https://twitter.com/login?lang=en"><img src="twitter.png"/></a>
+            <hr class="footerline"/>
+            <p>copyright @ 2020-2023 XYZ PLUMBING SERVICES Ltd.<br>ALL RIGHTS RERSERVED</p>
+        </footer>
+    </body>
+</html>

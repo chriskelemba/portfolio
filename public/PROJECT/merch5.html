@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merchandise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="navbar.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .section {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .section img {
+                padding-left: 20%;
+                padding-top: 4%;
+            }
+            .section .text {
+                margin-top: 4%;
+                margin-right: 25%;
+                float: right;
+            }
+            .section .text select[name=size] {
+                padding: 10px;
+                margin-top: 2%;
+                width: 50%;
+                border-radius: 10px;
+            }
+            .section .text input[type=submit] {
+                margin-top: 10%;
+                padding: 10px;
+                border-radius: 10px;
+                width: 100%;
+                border: none;
+                background-color: black;
+                color: white;
+            }
+            .section .text input[type=submit]:hover {
+                background-color: #0e2858;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            footer {
+                margin-top: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="login">
+                <form action="login.html" method="get" id="form">
+                    <input type="submit" name="Submit" value="Login"/>
+                </form>
+            </div>
+            <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 8%;">VNKNOWN</h1>
+        </header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="project.html"><div class="home"><span class="material-symbols-outlined">home</span></div>Home</a></li>
+                    <li><a href="news.html"><div class="news"><span class="material-symbols-outlined">news</span></div>News</a></li>
+                    <li><a href="partner.html"><div class="partner"><span class="material-symbols-outlined">group</span></div>Partners</a></li>
+                    <li><a href="contact.html"><div class="contact"><span class="material-symbols-outlined">contact_mail</span></div>Contact</a></li>
+                    <li><a href="about us.html"><div class="about_us"><span class="material-symbols-outlined">help</span></div>About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section">
+            <img src="jacket2.jpg" height="500" width="500"/>
+            <div class="text">
+                <h1>VNKNOWN BOMBER JACKET ORANGE</h1>
+                <p>
+                    Bomber Jacket, Orange<br>
+                    <b>$79.99</b>
+                </p>
+                <form action="" method="get" id="form">
+                    <label for="Size">Size</label>
+                    <br>
+                    <select id="size" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="2XL">2XL</option>
+                        <option value="3XL">3XL</option>
+                        <option value="4XL">4XL</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="Submit" value="PURCHASE"/>
+                </form>
+            </div>
+        </div>
+        <footer style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; padding: 25px; background-color: #000000;">
+            <a href="https://www.youtube.com/account"><img src="youtube.png"/></a><a href="https://www.facebook.com/login.php/"><img src="facebook.png"/></a><a href="https://www.instagram.com/accounts/login/"><img src="instagram.png"/></a><a href="https://twitter.com/login?lang=en"><img src="twitter.png"/></a><a href="https://www.tiktok.com/login"><img src="tiktok.png"/></a>
+            <hr class="footerline"/>
+            <p>copyright @ 2020-2023 VNKNOWN ltd.<br>ALL RIGHTS RERSERVED</p>
+        </footer>
+    </body>
+</html>
